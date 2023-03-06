@@ -54,7 +54,7 @@ a.btnStyleNav:hover {
 .section1{
     position: relative;
     /* chiều dọc = 50% chiều ngang của slider */
-    padding-top: 50%;
+    padding-top: 23%;
     background: url("../img/Section-content1.jpg") center / cover no-repeat;
 }
 /* MAIN CONTENT END */
