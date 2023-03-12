@@ -1,24 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!DOCTYPE html>
-    <html lang="en">
+  <html lang="en">
       <head>
-        <title>Bootstrap Example</title>
-        <meta charset="utf-8" />
+        <title>Elearn - online learning solution</title>
+        <meta charset="utf-8" />        
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- Icon start -->
         <link rel="stylesheet" href="/assets/font/themify-icons/themify-icons.css" />
         <!-- Icon end -->
         <!-- Style - Home.css -->
         <link rel="stylesheet" href="assets/Css/Home.css">
-
         <!-- Bootstrap CDN start -->
         <link
           rel="stylesheet"
@@ -27,6 +17,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <!-- Bootstrap CDN end   -->
+        <!-- fa icon CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Google font -->
+        <link href='https://fonts.googleapis.com/css?family=Tourney' rel='stylesheet'>        
       </head>
       <body>
         <!-- NAV BAR START -->
@@ -36,12 +30,14 @@
               <img class="logo" src="assets/img/logo.png" alt="logo">
             </div>
             <!-- Form search Start -->
-            <form class="navbar-form navbar-left" action="/action_page.php">
+            <form class="navbar-form navbar-left" action="#action">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Search" />
               </div>
               <!-- Button with search Icon -->
-              <button type="submit" class="btn btn-default searchStyle"><i class="search-icon ti-search"></i></button>
+              <button type="submit" class="btn btn-default searchStyle">
+                <i class="fa fa-search"></i>
+              </button>
             </form> <!-- Form search End -->
 
             <ul class="nav navbar-nav ul-content">
@@ -49,9 +45,10 @@
               <li class="active"><a href="#">About</a></li>
               <li class="active"><a href="#">Acedemics</a></li>
               <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                  >Courses<span class="caret"></span
-                ></a>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">                  
+                  Courses
+                  <i class="fa-solid fa-angle-down" style="color: black;"></i>
+                </a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Courses name  1-1</a></li>
                   <li><a href="#">Courses name  1-2</a></li>
@@ -73,15 +70,101 @@
         <!-- NAV BAR END -->
 
         <!-- MAIN CONTENT START -->
-        <div class="section1">
-          
+
+        <!-- Section 1 -->
+        <div class="section1">          
         </div>
+        <!-- Section 2 start -->
+        <div class="section2">
+          <div class="text-header">
+            <p>
+              Training <br>
+              program
+            </p>                        
+          </div>
+          <div class="training-list">
+            <!-- StudentTraining -->
+            <div class="col col-third list-training-item text-center">              
+              <img src="./assets/img/section2_itemlist1.png" alt="StudentTraining">
+              <a href="#StudentTraining">Student Training</a>
+            </div>
+            <!-- TeacherTraining -->
+            <div class="col col-third list-training-item text-center">              
+              <img src="./assets/img/section2_itemlist2.png" alt="TeacherTraining">
+              <a href="#TeacherTraining">Teacher Training</a>
+            </div>
+            <!-- PublicTraining -->
+            <div class="col col-third list-training-item text-center">              
+              <img src="./assets/img/section2_itemlist3.png" alt="PublicTraining">
+              <a href="#PublicTraining">Public Training</a>
+            </div>
+          </div>
+          <div class="text-bottom">
+            <p>Don't have account?<a href="#formCreateAccount">Click here</a>
+            </p>
+          </div>
+        </div> 
+        <!-- Section 2 end -->
+        
+        <!-- Section 3 start-->
+        <div class="section3">
+
+          
+          <!-- Img bottom -->
+          <div class="img-bottom">
+
+          </div>
+        </div>
+        <!-- Section 3 start-->
         <!-- MAIN CONTENT END -->
 
 
         <!-- FOOTER START -->
+          <footer>
+              <div class="main-content">
+                  <!-- left start -->
+                  <div class="left box">
+                      <h2>About us</h2>
+                      <div class="content">
+                          <p>This is an E-learning website</p>
+                      </div>
+                  </div>
+                  <!-- left end -->
 
-        <!-- FOOTER END   -->
+                  <!-- right start -->
+                  <div class="right box">
+                      <h2>CONTACT</h2>
+                      <div class="content">
+
+                          <div class="place">
+                              <span class="fas fa-map-marker-alt"></span>
+                              <span class="text">Ho Chi Minh city, VietNam</span>
+                          </div>
+
+                          <div class="phone">
+                              <span class="fas fa-phone-alt"></span>
+                              <span class="text">+084-79xxxxxxx</span>
+                          </div>
+
+                          <div class="email">
+                              <span class="fas fa-envelope"></span>
+                              <span class="text">abc@example.com</span>
+                          </div>
+
+                          <div class="social">
+                              <a href="#"><span class="fab fa-facebook-f"></span></a>
+                              <span class="text">facebook</span>
+                          </div>
+                          <div class="social">
+
+                              <a href="#"><span class="fab fa-youtube"></span></a>
+                              <span class="text">youtube</span>
+                          </div>
+                      </div>
+                      <!-- right end -->
+
+          </footer>
+  <!-- FOOTER END -->
       </body>
     </html>
   </body>
