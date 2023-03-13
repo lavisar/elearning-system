@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+* {
+    color: #d9d9d9;
+    font-family: 'Poppins', sans-serif;
+}
+/* Common */
+.clear {
+    /* giải quyết vấn đề của float */
+    clear: both;
+}
+/* use this class for text whitr */
+.text-white {
+    color: white !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full {
+    width: 100%;
+}
+.col-half {
+    width: 50%;
+}
+.col-third {
+    width: 33.33333%;
+}
+
+/* MAIN CONTENT START */
+
+/* SECTION 1 */
+.section1{
+    padding-top: 29%;
+    background: url("../img/aboutpage/section1_background.png") center / cover no-repeat;
+}
+/* SECTION 2 start*/
+.section2{
+    background-color: #9C73AB;
+    width: 100%;
+    height: 337px;
+}
+/* SECTION 2 end*/
+
+/* SECTION 3 start*/
+.section3 {
+    background-color: white;
+    width: 100%;
+    height: calc(300px *2);
+}
+/* SECTION 3 end*/
+
+
+
+
+/* MAIN CONTENT END */
