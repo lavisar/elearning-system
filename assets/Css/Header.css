@@ -1,46 +1,60 @@
 /* NAV start */
-.color-black {
-    color: black !important;
-}
 .nav-style {
-    background: #E3C6FD;
+	background-color: #fff;
+	position: relative;
+	min-height: 50px;
+	border: 1px solid transparent;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.color-black {
+	color: black !important;
 }
 .nav-style a {
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+}
+/* overwrite bootstrap nav */
+.container-fluid {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 .nav-style img {
-    height: auto;
-    width: 66px;
-    max-height: 72px;
-    max-width: 250px;
+	height: auto;
+	width: 66px;
+	max-height: 72px;
+	max-width: 250px;
 }
 button.btn.btn-default.searchStyle {
-    background: #5252D4;
-    color: #fff;
+	background: #5252d4;
+	color: #fff;
 }
 form.navbar-form.navbar-left {
-    margin-left: 29px;
+	margin-left: 29px;
 }
 ul.nav.navbar-nav.ul-content {
-    margin-left: 276px;
+	margin-left: 7px;
 }
 ul.nav.navbar-nav.navbar-right {
-    margin-right: 16px;
+	margin-right: 16px;
 }
 a.btnStyleNav {
-    font-size: 12px;
-    margin: 4px 2px;
-    cursor: pointer;
-    text-align: center;
-    color: white;
-    border-radius: inherit;
-    border-radius: 30px;
-    line-height: 11px;
+	font-size: 12px;
+	margin: 4px 2px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 11px;
+	color: #1c1d1f;
+	background-color: transparent;
+	border: 1px solid #1c1d1f;
+	line-height: 11px;
 }
 a.btnStyleNav:hover {
-    color: white;
-    opacity: 0.5;
+	font-size: 15px;
+	color: #1c1d1f;
+}
+form.navbar-form.navbar-left {
+	/* fix lỗi hiển thị search input */
+	margin-left: 0;
 }
 /* NAV END */

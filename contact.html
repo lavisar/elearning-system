@@ -9,7 +9,7 @@
 		<!-- Footer style -->
 		<link rel="stylesheet" href="assets/Css/Footer.css" />
 		<!-- Main Style -->
-		<link rel="stylesheet" href="assets/Css/Home.css" />
+		<link rel="stylesheet" href="assets/Css/Contact.css" />
 		<!-- Bootstrap CDN start -->
 		<link
 			rel="stylesheet"
@@ -92,55 +92,69 @@
 		<!-- NAV BAR END -->
 
 		<!-- MAIN CONTENT START -->
-		<!-- Main container start -->
-		<div class="Main-container">
-			<!-- Section 1 -->
-			<div class="section1"></div>
-			<!-- Section 2 start -->
-			<div class="section2">
-				<div class="text-header">
-					<p>
-						Training <br />
-						program
-					</p>
-				</div>
-				<div class="training-list">
-					<!-- StudentTraining -->
-					<div class="col col-third list-training-item text-center">
-						<img
-							src="./assets/img/homepage/section2_itemlist1.png"
-							alt="StudentTraining"
-						/>
-						<a href="#StudentTraining">Student Training</a>
+		<div class="main-container">
+			<div class="container">
+				<div class="content">
+					<div class="left-side">
+						<div class="address details">
+							<i class="fas fa-map-marker-alt"></i>
+							<div class="topic">Address</div>
+							<div class="text-one">
+								District 5, <br />
+								Ho Chi Minh City, VietNam
+							</div>
+						</div>
+						<div class="phone details">
+							<i class="fas fa-phone-alt"></i>
+							<div class="topic">Phone</div>
+							<div class="text-one">+123 456 789</div>
+						</div>
+						<div class="email details">
+							<i class="fas fa-envelope"></i>
+							<div class="topic">Email</div>
+							<div class="text-one">contact.info@example.com</div>
+						</div>
 					</div>
-					<!-- TeacherTraining -->
-					<div class="col col-third list-training-item text-center">
-						<img
-							src="./assets/img/homepage/section2_itemlist2.png"
-							alt="TeacherTraining"
-						/>
-						<a href="#TeacherTraining">Teacher Training</a>
-					</div>
-					<!-- PublicTraining -->
-					<div class="col col-third list-training-item text-center">
-						<img
-							src="./assets/img/homepage/section2_itemlist3.png"
-							alt="PublicTraining"
-						/>
-						<a href="#PublicTraining">Public Training</a>
+					<div class="right-side">
+						<div class="topic-text">Send us a message</div>
+						<p>
+							Please leave your information, we will contact you
+							shortly!
+						</p>
+						<form
+							id="form-contact"
+							action="#"
+							onsubmit="handleSubmit()"
+						>
+							<div class="input-box">
+								<input
+									type="text"
+									placeholder="Enter your name"
+									required
+								/>
+							</div>
+							<div class="input-box">
+								<input
+									type="email"
+									placeholder="Enter your email"
+									required
+								/>
+							</div>
+							<div class="input-box">
+								<input
+									type="text"
+									placeholder="Enter your question here"
+								/>
+							</div>
+							<div class="input-box message-box"></div>
+							<div class="button">
+								<input type="submit" value="Send Now" />
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
-			<!-- Section 2 end -->
-
-			<!-- Section 3 start-->
-			<div class="section3">
-				<!-- Img bottom -->
-				<div class="img-bottom"></div>
-			</div>
-			<!-- Section 3 start-->
 		</div>
-		<!-- Main container end-->
 		<!-- MAIN CONTENT END -->
 
 		<!-- FOOTER START -->
@@ -266,4 +280,12 @@
 		</footer>
 		<!-- FOOTER END -->
 	</body>
+
+	<script>
+		function handleSubmit() {
+            alert("Thanks for your infomation!");
+			document.getElementById("form-contact").reset();
+		}
+	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </html>

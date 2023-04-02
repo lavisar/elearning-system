@@ -1,123 +1,41 @@
-/* FOOTER START*/
-.flex-wrapper {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: flex-start;
+.footerStyle {
+    background: #000;
+    padding-bottom: 90px;
 }
-.content1 {
+.coppy-right-text {
     position: relative;
-    margin: 130px auto;
+    bottom: -79px;
     text-align: center;
-    padding: 0 20px;
 }
-
-.content1 .text {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #202020;
+.footerStyle a {
+    color: #f5f5f5;
+    text-decoration: none;
 }
-
-.content1 .p {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #202020;
+.footerStyle a:hover{
+    color: #f5f5f5;
+    text-decoration: underline;
 }
-
-footer {
-    bottom: 0px;
-    width: 100%;
-    background: #5252d4;
-    margin-top: auto;
-    justify-content: flex-end;
+.footer-content {
+    width: 90%;
+    position: relative;
+    top: 24px;
+    left: 59PX;
 }
-
-.main-content {
-    display: flex;
+.footer-content .item-list {
+    width: 27%;
 }
-
-
-.main-content .box {
-    flex-basis: 50%;
-    padding: 10px 20px;
-}
-
-.box h2 {
-    font-size: 1.125rem;
-    font-weight: 600;
+.footer-content .footer-heading {
+    font-size: 25px;
     text-transform: uppercase;
 }
-
-.box .content {
-    margin: 20px 0 0 0;
+.footer-content .item-list .social-icons {
+    font-size: 30px;
+    list-style: none;
     position: relative;
+    top: 11px;
+    display: flex;
+    justify-content: space-between;
 }
-
-.box .content:before {
-    position: absolute;
-    content: '';
-    top: -10px;
-    height: 2px;
-    width: 100%;
-    background: #fbad17;
+.footer-content ul.list-unstyled {
+    line-height: 2.6;
 }
-
-.box .content:after {
-    position: absolute;
-    content: '';
-    height: 2px;
-    width: 15%;
-    background: #fbad17;
-    top: -10px;
-}
-
-.right .content p {
-    text-align: justify;
-}
-
-.content .social {
-    margin: 15px 0;
-}
-
-.content .social a span {
-    height: 45px;
-    width: 45px;
-    background: #1a1a1a;
-    line-height: 45px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 50%;
-    transition: 0.3s;
-}
-
-.content .social a span:hover {
-    background: #fbad17;
-}
-
-.right .content .fas {
-    font-size: 1.4375rem;
-    background: #1a1a1a;
-    height: 45px;
-    width: 45px;
-    line-height: 45px;
-    text-align: center;
-    border-radius: 50%;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.right .content .fas:hover {
-    background: #fbad17;
-}
-
-.right .content .text {
-    font-size: 1.0625rem;
-    font-weight: 500;
-    padding-left: 10px;
-}
-
-.right .content .phone {
-    margin: 15px 0;
-}
-
-/* FOOTER END */

@@ -1,69 +1,162 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 /* Reset CSS */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 * {
-    color: #d9d9d9;
-    font-family: 'Poppins', sans-serif;
+	color: #d9d9d9;
+	font-family: "Poppins", sans-serif;
 }
 /* Common */
 .clear {
-    /* giải quyết vấn đề của float */
-    clear: both;
+	/* giải quyết vấn đề của float */
+	clear: both;
 }
 /* use this class for text whitr */
 .text-white {
-    color: white !important;
+	color: white !important;
 }
 .text-center {
-    text-align: center !important;
+	text-align: center !important;
 }
 .row {
-    margin-left: -8px;
-    margin-right: -8px;
+	margin-left: -8px;
+	margin-right: -8px;
 }
 .col {
-    float: left;
-    padding-left: 8px;
-    padding-right: 8px;
+	float: left;
+	padding-left: 8px;
+	padding-right: 8px;
 }
 .col-full {
-    width: 100%;
+	width: 100%;
 }
 .col-half {
-    width: 50%;
+	width: 50%;
 }
 .col-third {
-    width: 33.33333%;
+	width: 33.33333%;
 }
 
 /* MAIN CONTENT START */
-
+.Main-container {
+	margin: 0 12px;
+}
 /* SECTION 1 */
-.section1{
-    padding-top: 29%;
-    background: url("../img/aboutpage/section1_background.png") center / cover no-repeat;
+.section1 {
+	padding-top: 29%;
+	background: url("../img/aboutpage/section1_background.png") center / cover
+		no-repeat;
 }
 /* SECTION 2 start*/
-.section2{
-    background-color: #9C73AB;
-    width: 100%;
-    height: 337px;
+.section2 {
+	/* background-color: #dfeded; */
+	background-color: #ebebeb;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #d1d7dc;
+}
+.section2 img {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	float: right;
+}
+.section2 .section2-content {
+	float: left;
+	padding-left: 49px;
+	font-size: 15px;
+	line-height: 1.6;
+}
+.section2 .section2-content p {
+	color: #000;
+}
+.section2 .section2-content h3 {
+	color: #103b7a;
+	text-transform: uppercase;
+}
+.section2 .section2-content h3:hover {
+	text-decoration: underline;
 }
 /* SECTION 2 end*/
 
 /* SECTION 3 start*/
 .section3 {
-    background-color: white;
-    width: 100%;
-    height: calc(300px *2);
+	background-color: white;
+	width: 100%;
+	height: 100%;
 }
+.section3 img {
+    /* vertical-align: middle; */
+    width: 147px;
+    height: 147px;
+}
+.section3 h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 44px;
+    padding: 17px 0;
+    background: black;
+    margin-top: 10px;
+}
+.section3 .card-container {
+	display: flex;
+    justify-content: space-around;
+}
+.section3 .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 149px;
+    text-align: center;
+    margin: 35px 16px;
+}
+
+.section3 h1 {
+    font-size: 14px;
+    margin-top: 7px;
+    text-transform: uppercase;
+    color: #103b7a;
+}
+.section3 .title {
+	color: grey;
+	font-size: 12px;
+}
+
+.section3 button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+.section3  button a {
+	color: #fff;
+}
+
+button:hover,
+a:hover {
+	opacity: 0.7;
+}
+
 /* SECTION 3 end*/
 
-
-
-
 /* MAIN CONTENT END */
+
+/* RESPONSIVE */
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .section2 .section2-content {
+        width: 100%;
+        padding-top: 24px;
+    }
+    .section2 img {
+        display: none ;
+    }
+}
