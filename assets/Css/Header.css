@@ -1,3 +1,19 @@
+/* infomation & clock */
+.nav--top-Info {
+	position: relative;
+    background-color: black;
+	color: #fff;
+	padding-bottom: 20px;
+}
+.nav__clock--left {
+	position: absolute;
+	left: 16px;
+}
+.nav__mail--right {
+	position: absolute;
+	right: 23px;
+}
+
 /* NAV start */
 .nav-style {
 	background-color: #fff;

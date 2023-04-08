@@ -89,9 +89,10 @@
 	height: 100%;
 }
 .section3 img {
-    /* vertical-align: middle; */
-    width: 147px;
+	width: 157px;
     height: 147px;
+    border-radius: 20px;
+    margin-top: 13px;
 }
 .section3 h2 {
     text-align: center;
@@ -107,9 +108,12 @@
 }
 .section3 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 149px;
+    width: 181px;
     text-align: center;
     margin: 35px 16px;
+}
+.section3 .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
 }
 
 .section3 h1 {
