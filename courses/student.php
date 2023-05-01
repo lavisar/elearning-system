@@ -1,2 +1,3 @@
-<?php 
-    echo "hello" + $_SESSION['username'];
+<?php
+session_start();
+echo "hello ", $_SESSION['username'];

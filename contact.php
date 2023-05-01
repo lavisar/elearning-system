@@ -59,10 +59,10 @@
 				</div>
 				<div id="loaderId" class="right-side">
 					<div class="topic-text">Send us a message</div>
-					<p>
+					<h5>
 						Please leave your information, we will contact you
 						shortly!
-					</p>
+					</h5>
 					<?php
 					if ($_SERVER["REQUEST_METHOD"] == "POST") {
 						// connect to the database
@@ -82,7 +82,7 @@
 						$sql = "INSERT INTO contact (name, email, question) VALUES ('$name', '$email', '$question')";
 
 						if ($conn->query($sql) === TRUE) {
-							echo "New record created successfully";
+							echo "<b>Send successfully!!!</b>";
 						} else {
 							echo "Error: " . $sql . "<br>" . $conn->error;
 						}
@@ -98,7 +98,7 @@
 							<input type="email" placeholder="Enter your email" name="email" required />
 						</div>
 						<div class="input-box">
-							<input type="text" name="question" placeholder="Enter your question here" />
+							<input type="text" name="question" placeholder="Enter your question here" required />
 						</div>
 						<div class="input-box message-box"></div>
 						<div class="button">
@@ -115,33 +115,6 @@
 	<?php include "./Template/footer.html" ?>
 	<!-- FOOTER END -->
 </body>
-<script>
-	function handleSubmit() {
-		alert("Thanks for your infomation!");
-		const loaderId = document.getElementById("loaderId");
-		window.setTimeout(() => {
-			loaderId.innerHTML = `
-		<style>
-			.loader {
-			border: 16px solid #f3f3f3;
-			border-radius: 50%;
-			border-top: 16px solid #3498db;
-			width: 120px;
-			height: 120px;
-			-webkit-animation: spin 2s linear infinite; /* Safari */
-			animation: spin 2s linear infinite;
-		}
-		@keyframes spin {
-			0% { transform: rotate(0deg); }
-			100% { transform: rotate(360deg); }
-		}
-		</style>
-		<div id = "test" class="loader"></div>
-		`;
-			location.reload();
-		}, 100);
-	}
-</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
 </html>

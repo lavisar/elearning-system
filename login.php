@@ -60,8 +60,6 @@
             margin-top: 50px;
         }
 
-        .login-btn {}
-
         .register-btn {
             padding: 8px;
         }
