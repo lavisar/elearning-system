@@ -12,11 +12,12 @@
 
         .container {
             background-color: #fff;
-            border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            margin: 0 auto;
-            max-width: 400px;
+            margin: 100px auto;
+            max-width: 350px;
             padding: 20px;
+            border-radius: 10px;
+            height: 400px;
         }
 
         h1 {
@@ -26,21 +27,23 @@
         input[type=text],
         input[type=password] {
             border: none;
-            border-radius: 3px;
+            border-radius: 50px;
             box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-            padding: 10px;
-            width: 100%;
+            padding: 12px;
+            width: 95%;
+            margin: 9px -3px;
         }
 
         input[type=submit] {
             background-color: #4CAF50;
             border: none;
-            border-radius: 3px;
+            border-radius: 50px;
             color: #fff;
             cursor: pointer;
             margin-top: 10px;
             padding: 10px;
-            width: 100%;
+            width: 50%;
+            margin-left: 25%;
         }
 
         input[type=submit]:hover {
@@ -52,12 +55,22 @@
             font-weight: bold;
             margin-top: 10px;
         }
+
+        form {
+            margin-top: 50px;
+        }
+
+        .login-btn {}
+
+        .register-btn {
+            padding: 8px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>Đăng nhập</h1>
+        <h1>Welcome back!</h1>
         <?php
         if (isset($_POST['submit'])) {
             $username = $_POST['username'];
@@ -86,16 +99,18 @@
                     // Nếu role = 1 thì chuyển hướng đến trang teacher.php
                     session_start();
                     $_SESSION['username'] = $username;
-                    header('Location: ./course/teacher.php');
+                    header('Location: ./courses/teacher.php');
                 } else {
                     // Nếu role = 0 thì chuyển hướng đến trang student.php
                     session_start();
                     $_SESSION['username'] = $username;
-                    header('Location: ./course/student.php');
+                    header('Location: ./courses/student.php');
                 }
             } else {
                 // Đăng nhập thất bại
-                echo "<p>Sai tên đăng nhập hoặc mật khẩu. Vui lòng thử lại.</p>";
+                echo '<script language="javascript">';
+                echo 'alert("wrong user name or password, please try again")';
+                echo '</script>';
             }
 
             // Đóng kết nối đến cơ sở dữ liệu
@@ -103,13 +118,15 @@
         }
         ?>
         <form method="post">
-            <label>Tên đăng nhập:</label>
+            <label>User name:</label>
             <input type="text" name="username" required>
 
-            <label>Mật khẩu:</label>
+            <label>Password:</label>
             <input type="password" name="password" required>
-
-            <input type="submit" name="submit" value="Đăng nhập">
+            <p class="register-btn">Don't have a account? <a href="register.php">Click here</a></p>
+            <div class="login-btn">
+                <input type="submit" name="submit" value="Login">
+            </div>
         </form>
     </div>
 </body>
