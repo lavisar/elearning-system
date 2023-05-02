@@ -53,17 +53,17 @@
 				<!-- StudentTraining -->
 				<div class="col col-third list-training-item text-center">
 					<img src="./assets/img/homepage/section2_itemlist1.png" alt="StudentTraining" />
-					<a href="#StudentTraining">Student Training</a>
+					<a href="./courses/student.php">Student Training</a>
 				</div>
 				<!-- TeacherTraining -->
 				<div class="col col-third list-training-item text-center">
 					<img src="./assets/img/homepage/section2_itemlist2.png" alt="TeacherTraining" />
-					<a href="#TeacherTraining">Teacher Training</a>
+					<a href="./courses/teacher.php">Teacher Training</a>
 				</div>
 				<!-- PublicTraining -->
 				<div class="col col-third list-training-item text-center">
 					<img src="./assets/img/homepage/section2_itemlist3.png" alt="PublicTraining" />
-					<a href="#PublicTraining">Public Training</a>
+					<a href="academic.php">Public Training</a>
 				</div>
 			</div>
 		</div>

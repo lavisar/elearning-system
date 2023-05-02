@@ -91,16 +91,22 @@
                 // Lấy thông tin người dùng từ kết quả truy vấn
                 $row = mysqli_fetch_assoc($result);
                 $role = $row['role'];
-
+                $fullname = $row['fullname'];
                 // Kiểm tra giá trị của trường role
                 if ($role == 1) {
                     // Nếu role = 1 thì chuyển hướng đến trang teacher.php
                     session_start();
+                    // lưu thông tin đã đăng nhập
+                    $_SESSION['role'] = $role;
+                    $_SESSION['logged_in'] = true;
                     $_SESSION['username'] = $username;
                     header('Location: ./courses/teacher.php');
                 } else {
                     // Nếu role = 0 thì chuyển hướng đến trang student.php
                     session_start();
+                    // lưu thông tin đã đăng nhập
+                    $_SESSION['role'] = $role;
+                    $_SESSION['logged_in'] = true;
                     $_SESSION['username'] = $username;
                     header('Location: ./courses/student.php');
                 }
