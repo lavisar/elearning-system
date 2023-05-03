@@ -27,6 +27,9 @@
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
+	<?php
+	$role = $_SESSION['role'];
+	?>
 	<div class="wrapper">
 		<!-- Preloader -->
 		<div class="preloader flex-column justify-content-center align-items-center">
@@ -41,7 +44,12 @@
 					<a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
 				</li>
 				<li class="nav-item d-none d-sm-inline-block">
-					<a href="index3.html" class="nav-link">Home</a>
+					<?php if ($role == 0) { ?>
+						<a href="/Elearn_web/courses/student.php" class="nav-link">Home</a>
+					<?php }
+					if ($role == 1) { ?>
+						<a href="/Elearn_web/courses/teacher.php" class="nav-link">Home</a>
+					<?php } ?>
 				</li>
 			</ul>
 

@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elearn | Teacher</title>
+    <title>Elearn | Student</title>
 </head>
-
 
 <body>
     <!-- PHP kiểm tra đăng nhập và phân quyền -->
@@ -31,7 +30,7 @@
         <!-- Brand Logo -->
         <a href="#" class="brand-link">
             <img src="../assets/img/logo.png" class="brand-image" />
-            <span class="brand-text font-weight-light">TEACHER COURSES</span>
+            <span class="brand-text font-weight-light">E-learning.vn</span>
         </a>
 
         <!-- Sidebar -->
@@ -54,267 +53,56 @@
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                     <!-- Add icons to the links using the .nav-icon class
                     with font-awesome or any other icon font library -->
-
                     <li class="nav-item">
-                        <a href="pages/widgets.html" class="nav-link">
+                        <a href="updateProfile.php" class="nav-link">
+                            <i class="nav-icon fas fa-user"></i>
+                            <p>
+                                Profile
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-th"></i>
                             <p>
-                                Widgets
+                                Courses
                                 <span class="right badge badge-danger">New</span>
                             </p>
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon far fa-envelope"></i>
-                            <p>
-                                Mailbox
-                                <i class="fas fa-angle-left right"></i>
-                            </p>
-                        </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="pages/mailbox/mailbox.html" class="nav-link">
+                                <a href="./API_Youtube/student_courses/DataStructures.php" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Inbox</p>
+                                    Pedagogical behavior
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages/mailbox/compose.html" class="nav-link">
+                                <a href="./API_Youtube/student_courses/Java.php" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Compose</p>
+                                    Presentation skills
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages/mailbox/read-mail.html" class="nav-link">
+                                <a href="./API_Youtube/student_courses/PHP.php" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Read</p>
+                                    Pedagogic
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./API_Youtube/student_courses/Python.php" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    Teaching skills
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-book"></i>
+                        <a href="contactList.php" class="nav-link">
+                            <i class="nav-icon fa fa-question-circle"></i>
                             <p>
-                                Pages
-                                <i class="fas fa-angle-left right"></i>
+                                Question manager
                             </p>
                         </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="pages/examples/invoice.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Invoice</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/profile.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Profile</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/e-commerce.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>E-commerce</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/projects.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Projects</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/project-add.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Project Add</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/project-edit.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Project Edit</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/project-detail.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Project Detail</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/contacts.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Contacts</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/faq.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>FAQ</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/contact-us.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Contact us</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon far fa-plus-square"></i>
-                            <p>
-                                Extras
-                                <i class="fas fa-angle-left right"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>
-                                        Login & Register v1
-                                        <i class="fas fa-angle-left right"></i>
-                                    </p>
-                                </a>
-                                <ul class="nav nav-treeview">
-                                    <li class="nav-item">
-                                        <a href="pages/examples/login.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Login v1</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="pages/examples/register.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Register v1</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="pages/examples/forgot-password.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Forgot Password v1</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="pages/examples/recover-password.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Recover Password v1</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>
-                                        Login & Register v2
-                                        <i class="fas fa-angle-left right"></i>
-                                    </p>
-                                </a>
-                                <ul class="nav nav-treeview">
-                                    <li class="nav-item">
-                                        <a href="pages/examples/login-v2.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Login v2</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="pages/examples/register-v2.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Register v2</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="pages/examples/forgot-password-v2.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Forgot Password v2</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="pages/examples/recover-password-v2.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Recover Password v2</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/lockscreen.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Lockscreen</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/legacy-user-menu.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Legacy User Menu</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/language-menu.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Language Menu</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/404.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Error 404</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/500.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Error 500</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/pace.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Pace</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/blank.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Blank Page</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="starter.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Starter Page</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-search"></i>
-                            <p>
-                                Search
-                                <i class="fas fa-angle-left right"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="pages/search/simple.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Simple Search</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/search/enhanced.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Enhanced</p>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
                 </ul>
             </nav>
@@ -324,7 +112,46 @@
     </aside>
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper"></div>
+    <div class="content-wrapper p-5">
+        <ul class="list-unstyled">
+            <a href="./API_Youtube/teacher_courses/PresentationSkills.php" class="text-dark">
+                <li class="border border-info p-3 media">
+                    <img class="img-thumbnail mr-2" src="../assets/img/forCourses/presentation.jpg" alt="Generic placeholder image" style="width: 15%;">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">Presentation skills</h5>
+                        Presentation skills refer to the ability to effectively communicate and deliver information in a clear and engaging manner to an audience.
+                    </div>
+                </li>
+            </a>
+            <a href="./API_Youtube/teacher_courses/PedagogicalBehaviorSkills.php" class="text-dark">
+                <li class="border border-info p-3 media my-4">
+                    <img class="img-thumbnail mr-2" src="../assets/img/forCourses/Pedagogical_behavior.png" alt="Generic placeholder image" style="width: 15%;">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">Pedagogical behavior</h5>
+                        Pedagogical behavior refers to the actions and attitudes of teachers towards students that support their learning and development.
+                    </div>
+                </li>
+            </a>
+            <a href="./API_Youtube/teacher_courses/NghiepVuSP.php" class="text-dark">
+                <li class="border border-info p-3 media">
+                    <img class="img-thumbnail mr-2" src="../assets/img/forCourses/Pedagogic.jpg" alt="Generic placeholder image" style="width: 15%;">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">Pedagogic</h5>
+                        Pedagogy refers to the methods, strategies, and principles of teaching and education. It focuses on the process of transferring knowledge, skills, values, and attitudes from educators to learners.
+                    </div>
+                </li>
+            </a>
+            <a href="./API_Youtube/teacher_courses/TeachingSkills.php" class="text-dark">
+                <li class="border border-info p-3 media my-4">
+                    <img class="img-thumbnail mr-2" src="../assets/img/forCourses/Teaching skills.jpg" alt="Generic placeholder image" style="width: 15%;">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">Teaching skills</h5>
+                        Teaching skills refer to the abilities and techniques used by educators to facilitate learning and promote student success. These skills can include lesson planning, effective communication, classroom management, and assessment strategies.
+                    </div>
+                </li>
+            </a>
+        </ul>
+    </div>
     <!-- /.content-wrapper -->
 </body>
 
