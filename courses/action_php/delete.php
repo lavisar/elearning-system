@@ -14,7 +14,7 @@ $id = $_GET["id"];
 $sql = "DELETE FROM contact WHERE id = $id";
 
 if ($conn->query($sql) === TRUE) {
-    echo '<script>alert("Đã xóa liên hệ thành công."); window.location.href="../contactList.php";</script>';
+    echo '<script>alert("Delete successfully."); window.location.href="../contactList.php";</script>';
 } else {
     echo "Error deleting record: " . $conn->error;
 }

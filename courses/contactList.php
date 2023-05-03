@@ -146,7 +146,7 @@
                             echo "</tr>";
                         }
                     } else {
-                        echo "<tr><td colspan='4'>No contacts found.</td></tr>";
+                        echo "<tr><td colspan='4'>No question found.</td></tr>";
                     }
 
                     // Đóng kết nối đến database
