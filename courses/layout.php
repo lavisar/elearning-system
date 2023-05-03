@@ -56,7 +56,7 @@
 				<!-- Log out btn -->
 				<li class="nav-item">
 					<a class="nav-link" href="#" role="button">
-						<form method="post" action="logout.php">
+						<form method="post" action="./action_php/logout.php">
 							<input class="btn btn-warning" type="submit" name="logout" value="Log out" style="margin-top: -6px;">
 						</form>
 					</a>
