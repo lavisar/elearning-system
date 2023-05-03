@@ -135,158 +135,6 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon far fa-plus-square"></i>
-                            <p>
-                                Extras
-                                <i class="fas fa-angle-left right"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>
-                                        Login & Register v1
-                                        <i class="fas fa-angle-left right"></i>
-                                    </p>
-                                </a>
-                                <ul class="nav nav-treeview">
-                                    <li class="nav-item">
-                                        <a href="pages/examples/login.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Login v1</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="pages/examples/register.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Register v1</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="pages/examples/forgot-password.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Forgot Password v1</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="pages/examples/recover-password.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Recover Password v1</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>
-                                        Login & Register v2
-                                        <i class="fas fa-angle-left right"></i>
-                                    </p>
-                                </a>
-                                <ul class="nav nav-treeview">
-                                    <li class="nav-item">
-                                        <a href="pages/examples/login-v2.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Login v2</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="pages/examples/register-v2.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Register v2</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="pages/examples/forgot-password-v2.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Forgot Password v2</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="pages/examples/recover-password-v2.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Recover Password v2</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/lockscreen.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Lockscreen</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/legacy-user-menu.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Legacy User Menu</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/language-menu.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Language Menu</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/404.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Error 404</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/500.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Error 500</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/pace.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Pace</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/examples/blank.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Blank Page</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="starter.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Starter Page</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-search"></i>
-                            <p>
-                                Search
-                                <i class="fas fa-angle-left right"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="pages/search/simple.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Simple Search</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/search/enhanced.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Enhanced</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
                 </ul>
             </nav>
             <!-- /.sidebar-menu -->
@@ -295,17 +143,79 @@
     </aside>
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <!-- Môn 1 -->
-        <?php
-        include "./API_Youtube/student_courses/DataStructures.php";
-        ?>
-        <!-- Môn 2 -->
+    <div class="content-wrapper p-5">
+        <div id="accordion">
+            <div class="card ">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link media " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <img class="mr-3 img-thumbnail" src="../assets/img/forCourses/languge-pic.jpg" alt="Language" style="width: 20%">
+                            <div class="media-body text-left text-dark">
+                                <h5 class="mt-0 mb-1">Language</h5>
+                                This is example of Language
+                            </div>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a href="./API_Youtube/student_courses/English.php" class="list-group-item list-group-item-action">English</a>
+                            <a href="./API_Youtube/student_courses/Chinese.php" class="list-group-item list-group-item-action">Chinese</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Môn 3 -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link media collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <img class="mr-3 img-thumbnail" src="../assets/img/forCourses/programing.png" alt="Programing" style="width: 20%">
+                            <div class="media-body text-left text-dark">
+                                <h5 class="mt-0 mb-1">Programing</h5>
+                                This is example of Programing
+                            </div>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a href="./API_Youtube/student_courses/Cpp.php" class="list-group-item list-group-item-action">C++</a>
+                            <a href="./API_Youtube/student_courses/DataStructures.php" class="list-group-item list-group-item-action">Data Structures</a>
+                            <a href="./API_Youtube/student_courses/Java.php" class="list-group-item list-group-item-action">Java</a>
+                            <a href="./API_Youtube/student_courses/PHP.php" class="list-group-item list-group-item-action">PHP</a>
+                            <a href="./API_Youtube/student_courses/Python.php" class="list-group-item list-group-item-action">Python</a>
+                            <a href="./API_Youtube/student_courses/Web.php" class="list-group-item list-group-item-action">Web</a>
+                            <a href="./API_Youtube/student_courses/SourceControl.php" class="list-group-item list-group-item-action">Source Control</a>
+                            <a href="./API_Youtube/student_courses/MySQL.php" class="list-group-item list-group-item-action">My SQL</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Môn 4 -->
-
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link media collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <img class="mr-3 img-thumbnail" src="../assets/img/forCourses/subject.jpg" alt="Subject" style="width: 20%">
+                            <div class="media-body text-left text-dark">
+                                <h5 class="mt-0 mb-1">Subject</h5>
+                                This is example of Subject
+                            </div>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a href="./API_Youtube/student_courses/Math.php" class="list-group-item list-group-item-action">Math</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- /.content-wrapper -->
 </body>
