@@ -71,25 +71,25 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="./API_Youtube/student_courses/DataStructures.php" class="nav-link">
+                                <a href="./API_Youtube/teacher_courses/PedagogicalBehaviorSkills.php" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Pedagogical behavior
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./API_Youtube/student_courses/Java.php" class="nav-link">
+                                <a href="./API_Youtube/teacher_courses/PresentationSkills.php" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Presentation skills
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./API_Youtube/student_courses/PHP.php" class="nav-link">
+                                <a href="./API_Youtube/teacher_courses/NghiepVuSP.php" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Pedagogic
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./API_Youtube/student_courses/Python.php" class="nav-link">
+                                <a href="./API_Youtube/teacher_courses/TeachingSkills.php" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Teaching skills
                                 </a>

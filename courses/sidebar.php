@@ -1,3 +1,4 @@
+<?php require 'config.php' ?>
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
@@ -28,7 +29,7 @@
                     <!-- Add icons to the links using the .nav-icon class
                     with font-awesome or any other icon font library -->
                     <li class="nav-item">
-                        <a href="updateProfile.php" class="nav-link">
+                        <a href="<?php echo $domain_profileUpdate ?>" class="nav-link">
                             <i class="nav-icon fas fa-user"></i>
                             <p>
                                 Profile
@@ -91,7 +92,7 @@
                     <!-- Add icons to the links using the .nav-icon class
                     with font-awesome or any other icon font library -->
                     <li class="nav-item">
-                        <a href="updateProfile.php" class="nav-link">
+                        <a href="<?php echo $domain_profileUpdate ?>" class="nav-link">
                             <i class="nav-icon fas fa-user"></i>
                             <p>
                                 Profile
@@ -134,7 +135,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="<?php $GLOBALS['domain'] ?>" class="nav-link">
+                        <a href="<?php echo $domain_contactList ?>" class="nav-link">
                             <i class="nav-icon fa fa-question-circle"></i>
                             <p>
                                 Question manager

@@ -29,6 +29,7 @@
 <body class="hold-transition sidebar-mini layout-fixed">
 	<?php
 	$role = $_SESSION['role'];
+	require 'config.php';
 	?>
 	<div class="wrapper">
 		<!-- Preloader -->
@@ -64,7 +65,7 @@
 				<!-- Log out btn -->
 				<li class="nav-item">
 					<a class="nav-link" href="#" role="button">
-						<form method="post" action="./action_php/logout.php">
+						<form method="post" action="<?php echo $domain_actionPHP_Logout ?>">
 							<input class="btn btn-warning" type="submit" name="logout" value="Log out" style="margin-top: -6px;">
 						</form>
 					</a>
