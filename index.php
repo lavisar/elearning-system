@@ -43,7 +43,7 @@
 		<!-- Section 1 -->
 		<div class="section1"></div>
 		<!-- Section 2 start -->
-		<div class="section2" style="height: 350px;">
+		<div class="section2">
 			<div class="text-header">
 				<p>
 					Training <br />
@@ -67,8 +67,11 @@
 					<a href="academic.php">Public Training</a>
 				</div>
 			</div>
+			<div style="height: 100px"></div>
 		</div>
+
 		<!-- Section 2 end -->
+
 	</div>
 	<!-- Main container end-->
 	<!-- MAIN CONTENT END -->

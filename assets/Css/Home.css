@@ -89,7 +89,7 @@
 
 .section2 .list-training-item {
 	background-color: #f7f9fa;
-	padding: 10px 24px;
+	padding: 21px 24px;
 	margin: 17px 112px;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
@@ -120,11 +120,6 @@
 /* SECTION 2 end*/
 
 /* FIX RESPONSIVE PROBLEM */
-@media only screen and (min-width: 600px) {
-	.section2 {
-		height: fit-content;
-	}
-}
 @media (max-width: 1080px) {
 	.section2 {
 		height: fit-content !important;
