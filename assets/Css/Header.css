@@ -79,4 +79,15 @@ form.navbar-form.navbar-left {
 	.nav--top-Info {
 		display: none;
 	}
+	ul.nav.navbar-nav.ul-content {
+		display: none;
+		margin-left: 7px;
+	}
+	ul.nav.navbar-nav.navbar-right {
+		margin-right: 16px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: flex;
+	}
 }
