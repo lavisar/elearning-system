@@ -95,11 +95,17 @@
             $fullname = mysqli_real_escape_string($conn, $_POST['fullname']);
             $password = mysqli_real_escape_string($conn, $_POST['password']);
             $phone = mysqli_real_escape_string($conn, $_POST['phone']);
-            $role = mysqli_real_escape_string($conn, $_POST['role']);
+            // Nếu role là teacher thì giá trị là 1, ngược lại là 0
+            if ($_POST['role'] == 'teacher') {
+                $role = 1;
+            } else {
+                $role = 0;
+            }
+
             $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
             // Thêm dữ liệu vào bảng
-            $sql = "INSERT INTO user (username, password, fullname, phone, role) VALUES ('$username', '$hashed_password', '$fullname', '$phone', '$role')";
+            $sql = "INSERT INTO user (username, password, fullname, phone, role) VALUES ('$username', '$hashed_password', '$fullname', '$phone', $role)";
             if (mysqli_query($conn, $sql)) {
                 header('Location: login.php');
             } else {
@@ -125,9 +131,9 @@
             <input type="tel" name="phone" required><br>
 
             <label for="role">Select your role:</label> <br>
-            <input type="radio" id="teacher" name="role" value="1">
+            <input type="radio" id="teacher" name="role" value="teacher">
             <b>Teacher</b>
-            <input type="radio" id="student" name="role" value="0">
+            <input type="radio" id="student" name="role" value="student" checked>
             <b>Student</b>
 
             <input type="submit" name="submit" value="Submit">
