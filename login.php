@@ -83,7 +83,7 @@
             }
 
             // Truy vấn để kiểm tra thông tin đăng nhập
-            $sql = "SELECT * FROM user WHERE username='$username' AND password='$password'";
+            $sql = "SELECT * FROM user WHERE username='$username'";
             $result = mysqli_query($conn, $sql);
 
             // Kiểm tra kết quả truy vấn
@@ -91,43 +91,47 @@
                 // Lấy thông tin người dùng từ kết quả truy vấn
                 $row = mysqli_fetch_assoc($result);
                 $userId = $row['id'];
+                $hashed_password = $row['password'];
                 $role = $row['role'];
                 $fullName = $row['fullname'];
                 $phone = $row['phone'];
-                // Kiểm tra giá trị của trường role
-                if ($role == 1) {
-                    // Nếu role = 1 thì chuyển hướng đến trang teacher.php
+
+                // Kiểm tra mật khẩu
+                if (password_verify($password, $hashed_password)) {
+                    // Mật khẩu đúng
                     session_start();
-                    // lưu thông tin đã đăng nhập
+                    // Lưu thông tin đã đăng nhập
                     $_SESSION['id'] = $userId;
                     $_SESSION['role'] = $role;
                     $_SESSION['logged_in'] = true;
                     $_SESSION['username'] = $username;
                     $_SESSION['full_name'] = $fullName;
                     $_SESSION['phone'] = $phone;
-                    header('Location: ./courses/teacher.php');
+                    if ($role == 1) {
+                        // Nếu role = 1 thì chuyển hướng đến trang teacher.php
+                        header('Location: ./courses/teacher.php');
+                    } else {
+                        // Nếu role = 0 thì chuyển hướng đến trang student.php
+                        header('Location: ./courses/student.php');
+                    }
                 } else {
-                    // Nếu role = 0 thì chuyển hướng đến trang teacher.php
-                    session_start();
-                    // lưu thông tin đã đăng nhập
-                    $_SESSION['id'] = $userId;
-                    $_SESSION['role'] = $role;
-                    $_SESSION['logged_in'] = true;
-                    $_SESSION['username'] = $username;
-                    $_SESSION['fullname'] = $fullname;
-                    $_SESSION['phone'] = $phone;
-                    header('Location: ./courses/student.php');
+                    // Mật khẩu sai
+                    echo '<script language="javascript">';
+                    echo 'alert("Incorrect password, please try again")';
+                    echo '</script>';
                 }
             } else {
-                // Đăng nhập thất bại
+                // Tên đăng nhập sai
                 echo '<script language="javascript">';
-                echo 'alert("wrong user name or password, please try again")';
+                echo 'alert("Username does not exist, please try again")';
                 echo '</script>';
             }
+
 
             // Đóng kết nối đến cơ sở dữ liệu
             mysqli_close($conn);
         }
+
         ?>
         <form method="post">
             <label>User name:</label>
