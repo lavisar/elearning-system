@@ -97,7 +97,7 @@
 					<h1>viet thanh</h1>
 					<p class="title">Backend Dev</p>
 					<p>HCMUE</p>
-					<button><a href="">More</a></button>
+					<button><a href="https://avataraand76.github.io/personal/">More</a></button>
 				</div>
 				<div class="card">
 					<img src="assets/img/aboutpage/section3_quy.jpg" alt="John" style="max-width: 100%" />
