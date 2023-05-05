@@ -46,37 +46,37 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="./API_Youtube/student_courses/DataStructures.php" class="nav-link">
+                                <a href="<?php echo $domain_courses_DataStructure ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Data Structures</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./API_Youtube/student_courses/Java.php" class="nav-link">
+                                <a href="<?php echo $domain_courses_Java ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Java</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./API_Youtube/student_courses/PHP.php" class="nav-link">
+                                <a href="<?php echo $domain_courses_PHP ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     PHP</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./API_Youtube/student_courses/Python.php" class="nav-link">
+                                <a href="<?php echo $domain_courses_Python ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Python</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./API_Youtube/student_courses/Web.php" class="nav-link">
+                                <a href="<?php echo $domain_courses_Web ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Web</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./API_Youtube/student_courses/SourceControl.php" class="nav-link">
+                                <a href="<?php echo $domain_courses_Git ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Source Control</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./API_Youtube/student_courses/MySQL.php" class="nav-link">
+                                <a href="<?php echo $domain_courses_MySQL ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     My SQL</a>
                             </li>
