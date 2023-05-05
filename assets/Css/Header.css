@@ -1,7 +1,7 @@
 /* infomation & clock */
 .nav--top-Info {
 	position: relative;
-    background-color: black;
+	background-color: black;
 	color: #fff;
 	padding-bottom: 20px;
 }
@@ -66,7 +66,6 @@ a.btnStyleNav {
 	line-height: 11px;
 }
 a.btnStyleNav:hover {
-	font-size: 15px;
 	color: #1c1d1f;
 }
 form.navbar-form.navbar-left {
@@ -74,3 +73,10 @@ form.navbar-form.navbar-left {
 	margin-left: 0;
 }
 /* NAV END */
+
+/* FIX RESPONSIVE PROBLEM */
+@media (max-width: 1080px) {
+	.nav--top-Info {
+		display: none;
+	}
+}
