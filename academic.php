@@ -47,9 +47,9 @@
 				<p>
 					Together, the creativity and intelligence of the residents of this house create a dynamic and stimulating environment. It's a place where you can come to be inspired, to learn, and to grow. Whether you are an artist, an entrepreneur, a scientist, or just someone who loves to think deeply about the world, a house of creative and intelligent individuals is the perfect place to call home.
 				</p>
-				<div class="btn">
-					<button type="button">Our Team</button>
-					<button type="button" class="btn2">Learn More</button>
+				<div class="btn" style="text-decoration: none;">
+					<button type="button"><a href="about.php" style="color: black">Our Team</a></button>
+					<button type="button" class="btn2"><a href="login.php" style="color: white">Learn More</a></button>
 				</div>
 			</div>
 		</div>
