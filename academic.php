@@ -22,6 +22,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Tourney" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body onload="startTime()">
@@ -33,15 +36,26 @@
 	<!-- NAV BAR START -->
 	<?php include "./Template/nav.html" ?>
 	<!-- NAV BAR END -->
+
 	<!-- MAIN CONTENT START -->
-
-	<!-- WEBSITE UNDER DEVELOPMENT ALERT -->
-	<div class="img--container" style="width: 100%; height: auto; text-align: center; background-color: #4e4e4e;">
-		<img src="assets/img/forNotCompletedWeb/flat.jpg" style="width: 50%" />
-	</div>
-	<!-- WEBSITE UNDER DEVELOPMENT ALERT -->
-
+	<section class="academic">
+		<div class="main">
+			<img src="assets/img/academicpage/academic.jpg">
+			<div class="all-text">
+				<h4>Academic</h4>
+				<h1>A House Of Creative & Intelligent</h1>
+				<p>
+					Together, the creativity and intelligence of the residents of this house create a dynamic and stimulating environment. It's a place where you can come to be inspired, to learn, and to grow. Whether you are an artist, an entrepreneur, a scientist, or just someone who loves to think deeply about the world, a house of creative and intelligent individuals is the perfect place to call home.
+				</p>
+				<div class="btn">
+					<button type="button">Our Team</button>
+					<button type="button" class="btn2">Learn More</button>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- MAIN CONTENT END -->
+
 	<!-- FOOTER START -->
 	<?php include "./Template/footer.html" ?>
 	<!-- FOOTER END -->

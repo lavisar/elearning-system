@@ -67,7 +67,7 @@
 .section2 {
 	background-color: #f7f9fa;
 	width: 100%;
-	height: auto;
+	height: 350px;
 	border: 1px solid #d1d7dc;
 }
 
@@ -117,37 +117,18 @@
 	cursor: pointer;
 	text-decoration: none;
 }
-
 /* SECTION 2 end*/
 
-/* SECTION 3 start*/
-.section3 {
-	background-color: white;
-	width: 100%;
-	height: calc(300px * 2);
-	position: relative;
-}
-
-.section3__img--container {
-	display: flex;
-	justify-content: center;
-	position: absolute;
-	bottom: 0;
-}
-
-.section3__img {
-	max-width: 70%;
-}
-
-.section3 img {
-	max-width: 100%;
-}
-/* CAROUSEL */
-
-/* SECTION 3 end*/
-
 /* FIX RESPONSIVE PROBLEM */
+@media only screen and (min-width: 600px) {
+	.section2 {
+		height: fit-content;
+	}
+}
 @media (max-width: 1080px) {
+	.section2 {
+		height: fit-content !important;
+	}
 	.section2 .training-list {
 		flex-direction: column;
 	}

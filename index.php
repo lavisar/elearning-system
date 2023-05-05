@@ -27,6 +27,7 @@
 <link rel="stylesheet" href="assets/Css/Home.css" />
 
 <body onload="startTime()">
+
 	<!-- clock and some infomation here -->
 	<div class="nav--top-Info">
 		<div id="txt" class="nav__clock--left"></div>
@@ -42,7 +43,7 @@
 		<!-- Section 1 -->
 		<div class="section1"></div>
 		<!-- Section 2 start -->
-		<div class="section2">
+		<div class="section2" style="height: 350px;">
 			<div class="text-header">
 				<p>
 					Training <br />
@@ -68,16 +69,6 @@
 			</div>
 		</div>
 		<!-- Section 2 end -->
-		<!-- Section 3 start-->
-		<div class="section3">
-			<!-- Img bottom -->
-			<div class="section3__img--container">
-				<div class="section3__img">
-					<img src="assets/img/homepage/section3_bottom.png" alt="" />
-				</div>
-			</div>
-		</div>
-		<!-- Section 3 start-->
 	</div>
 	<!-- Main container end-->
 	<!-- MAIN CONTENT END -->
