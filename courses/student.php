@@ -124,7 +124,7 @@
                             <img class="mr-3 img-thumbnail" src="../assets/img/forCourses/languge-pic.jpg" alt="Language" style="width: 20%">
                             <div class="media-body text-left text-dark">
                                 <h5 class="mt-0 mb-1">Language</h5>
-                                This is example of Language
+                                In our language course, you'll immerse yourself in a new culture and learn to communicate effectively in a foreign language. With interactive lessons and personalized instruction, you'll gain confidence and fluency in speaking, listening, reading, and writing.
                             </div>
                         </button>
                     </h5>
@@ -146,7 +146,7 @@
                             <img class="mr-3 img-thumbnail" src="../assets/img/forCourses/programing.png" alt="Programing" style="width: 20%">
                             <div class="media-body text-left text-dark">
                                 <h5 class="mt-0 mb-1">Programing</h5>
-                                This is example of Programing
+                                Our programming course is designed to teach you the skills you need to succeed in the tech industry. From the basics of coding to advanced programming concepts, you'll learn to create websites, software, and apps that meet modern standards. Our experienced instructors will guide you through hands-on projects, so you can develop practical skills and build a portfolio of work to showcase your abilities.
                             </div>
                         </button>
                     </h5>
@@ -174,7 +174,7 @@
                             <img class="mr-3 img-thumbnail" src="../assets/img/forCourses/subject.jpg" alt="Subject" style="width: 20%">
                             <div class="media-body text-left text-dark">
                                 <h5 class="mt-0 mb-1">Subject</h5>
-                                This is example of Subject
+                                Our subject course offers in-depth instruction on a particular topic, allowing you to explore and deepen your understanding of the subject. With a combination of lectures, discussions, and hands-on projects, you'll gain a comprehensive understanding of the subject matter and develop critical thinking skills. Our experienced instructors provide personalized guidance and support, ensuring that you get the most out of your learning experience.
                             </div>
                         </button>
                     </h5>

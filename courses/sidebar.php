@@ -134,7 +134,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="contactList.php" class="nav-link">
+                        <a href="<?php $GLOBALS['domain'] ?>" class="nav-link">
                             <i class="nav-icon fa fa-question-circle"></i>
                             <p>
                                 Question manager

@@ -10,6 +10,7 @@
 
 <body>
     <?php
+    require '../config.php';
     session_start();
     $user_id = $_SESSION['id'];
     // Kiểm tra xem người dùng đã đăng nhập hay chưa
@@ -27,7 +28,6 @@
     $fullname = $data['fullname'];
     $phone = $data['phone'];
     $username = $data['username'];
-
     include "layout.php";
     ?>
     <!-- Main Sidebar Container -->
@@ -167,7 +167,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="question.php" class="nav-link">
+                            <a href="$domain" class="nav-link">
                                 <i class="nav-icon fa fa-question-circle"></i>
                                 <p>
                                     Question manager
