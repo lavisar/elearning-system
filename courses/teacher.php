@@ -12,6 +12,7 @@
     <!-- PHP kiểm tra đăng nhập và phân quyền -->
     <?php
     session_start();
+    require 'config.php';
     if ($_SESSION['role'] == 0) {
         // Nếu chưa sai quyền, chuyển hướng đến trang đăng nhập        
         header('Location: ../login.php');
@@ -71,25 +72,25 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="./API_Youtube/teacher_courses/PedagogicalBehaviorSkills.php" class="nav-link">
+                                <a href="<?php echo $domain_courses_PedagogicalBehaviorSkills ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Pedagogical behavior
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./API_Youtube/teacher_courses/PresentationSkills.php" class="nav-link">
+                                <a href="<?php echo $domain_courses_Presentation ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Presentation skills
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./API_Youtube/teacher_courses/NghiepVuSP.php" class="nav-link">
+                                <a href="<?php echo $domain_courses_Pedagogical ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Pedagogic
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./API_Youtube/teacher_courses/TeachingSkills.php" class="nav-link">
+                                <a href="<?php echo $domain_courses_TeachingSkill ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Teaching skills
                                 </a>
@@ -97,7 +98,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="contactList.php" class="nav-link">
+                        <a href="<?php echo $domain_contactList ?>" class="nav-link">
                             <i class="nav-icon fa fa-question-circle"></i>
                             <p>
                                 Question manager

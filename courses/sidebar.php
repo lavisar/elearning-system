@@ -92,7 +92,7 @@
                     <!-- Add icons to the links using the .nav-icon class
                     with font-awesome or any other icon font library -->
                     <li class="nav-item">
-                        <a href="<?php echo $domain_profileUpdate ?>" class="nav-link">
+                        <a href="updateProfile.php" class="nav-link">
                             <i class="nav-icon fas fa-user"></i>
                             <p>
                                 Profile
@@ -109,25 +109,25 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="./API_Youtube/teacher_courses/PedagogicalBehaviorSkills.php" class="nav-link">
+                                <a href="<?php echo $domain_courses_PedagogicalBehaviorSkills ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Pedagogical behavior
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./API_Youtube/teacher_courses/PresentationSkills.php" class="nav-link">
+                                <a href="<?php echo $domain_courses_Presentation ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Presentation skills
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./API_Youtube/teacher_courses/NghiepVuSP.php" class="nav-link">
+                                <a href="<?php echo $domain_courses_Pedagogical ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Pedagogic
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./API_Youtube/teacher_courses/TeachingSkills.php" class="nav-link">
+                                <a href="<?php echo $domain_courses_TeachingSkill ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Teaching skills
                                 </a>
