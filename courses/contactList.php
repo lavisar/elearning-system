@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Contact List</title>
+    <title>Teacher | Contact Manager</title>
     <!-- Bootstrap CSS -->
 </head>
 
@@ -10,6 +10,7 @@
     <!-- PHP kiểm tra đăng nhập và phân quyền -->
     <?php
     session_start();
+    require 'config.php';
     if ($_SESSION['role'] == 0) {
         // Nếu chưa sai quyền, chuyển hướng đến trang đăng nhập        
         header('Location: ../login.php');
@@ -99,6 +100,14 @@
                             <i class="nav-icon fa fa-question-circle"></i>
                             <p>
                                 Question manager
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="<?php echo $domain_studentManager ?>" class="nav-link">
+                            <i class="nav-icon fas fa-address-card"></i>
+                            <p>
+                                Student manager
                             </p>
                         </a>
                     </li>

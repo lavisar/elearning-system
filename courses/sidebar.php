@@ -144,6 +144,14 @@ require 'config.php';
                             </p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="<?php echo $domain_studentManager ?>" class="nav-link">
+                            <i class="nav-icon fas fa-address-card"></i>
+                            <p>
+                                Student manager
+                            </p>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         <?php } ?>

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Contact List</title>
+    <title>Teacher | Student Manager</title>
     <!-- Bootstrap CSS -->
 </head>
 
@@ -88,7 +88,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="<?php echo $domain_courses_TeachingSkills ?>" class="nav-link">
+                                <a href="<?php echo $domain_courses_TeachingSkill ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Teaching skills
                                 </a>
@@ -105,7 +105,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="<?php echo $domain_studentManager ?>" class="nav-link">
-                            <i class="nav-icon fa fa-question-circle"></i>
+                            <i class="nav-icon fas fa-address-card"></i>
                             <p>
                                 Student manager
                             </p>
@@ -120,15 +120,14 @@
 
     <div class="content-wrapper p-5">
         <div class="container">
-            <h2>Question List</h2>
+            <h2>Student Manager</h2>
             <table class="table table-hover">
                 <thead class="thead-dark">
                     <tr>
                         <th>ID</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Question</th>
-                        <th>Action</th>
+                        <th>Username</th>
+                        <th>Full Name</th>
+                        <th>Phone</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -140,7 +139,7 @@
                         die("Connection failed: " . $conn->connect_error);
                     }
                     // Truy vấn SQL để lấy dữ liệu từ bảng contact
-                    $sql = "SELECT * FROM contact ORDER BY id DESC";
+                    $sql = "SELECT * FROM user WHERE role = 0";
                     $result = $conn->query($sql);
 
                     // Nếu có dữ liệu, thêm vào danh sách
@@ -148,14 +147,13 @@
                         while ($row = $result->fetch_assoc()) {
                             echo "<tr>";
                             echo "<td>" . $row["id"] . "</td>";
-                            echo "<td>" . $row["name"] . "</td>";
-                            echo "<td>" . $row["email"] . "</td>";
-                            echo "<td style='max-width: 70%;'>" . $row["question"] . "</td>";
-                            echo "<td><a href='./action_php/delete.php?id=" . $row["id"] . "' class='btn btn-danger'>Delete</a></td>";
+                            echo "<td>" . $row["username"] . "</td>";
+                            echo "<td>" . $row["fullname"] . "</td>";
+                            echo "<td>" . $row["phone"] . "</td>";
                             echo "</tr>";
                         }
                     } else {
-                        echo "<tr><td colspan='4'>No question found.</td></tr>";
+                        echo "<tr><td colspan='4'>No student found.</td></tr>";
                     }
 
                     // Đóng kết nối đến database
