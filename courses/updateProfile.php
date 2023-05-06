@@ -10,7 +10,7 @@
 
 <body>
     <?php
-    require '../config.php';
+    require 'config.php';
     session_start();
     $user_id = $_SESSION['id'];
     // Kiểm tra xem người dùng đã đăng nhập hay chưa
@@ -78,37 +78,37 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="./API_Youtube/student_courses/DataStructures.php" class="nav-link">
+                                    <a href="<?php echo $domain_courses_DataStructure ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         Data Structures</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./API_Youtube/student_courses/Java.php" class="nav-link">
+                                    <a href="<?php echo $domain_courses_Java ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         Java</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./API_Youtube/student_courses/PHP.php" class="nav-link">
+                                    <a href="<?php echo $domain_courses_PHP ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         PHP</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./API_Youtube/student_courses/Python.php" class="nav-link">
+                                    <a href="<?php echo $domain_courses_Python ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         Python</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./API_Youtube/student_courses/Web.php" class="nav-link">
+                                    <a href="<?php echo $domain_courses_Web ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         Web</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./API_Youtube/student_courses/SourceControl.php" class="nav-link">
+                                    <a href="<?php echo $domain_courses_Git ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         Source Control</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./API_Youtube/student_courses/MySQL.php" class="nav-link">
+                                    <a href="<?php echo $domain_courses_MySQL ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         My SQL</a>
                                 </li>
@@ -141,25 +141,25 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="./API_Youtube/teacher_courses/PedagogicalBehaviorSkills.php" class="nav-link">
+                                    <a href="<?php echo $domain_courses_PedagogicalBehaviorSkills ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         Pedagogical behavior
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./API_Youtube/teacher_courses/PresentationSkills.php" class="nav-link">
+                                    <a href="<?php echo $domain_courses_Presentation ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         Presentation skills
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./API_Youtube/teacher_courses/NghiepVuSP.php" class="nav-link">
+                                    <a href="<?php echo $domain_courses_Pedagogical ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         Pedagogic
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./API_Youtube/teacher_courses/TeachingSkills.php" class="nav-link">
+                                    <a href="<?php echo $domain_courses_TeachingSkills ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         Teaching skills
                                     </a>
@@ -167,7 +167,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="$domain" class="nav-link">
+                            <a href="<?php echo $domain_contactList ?>" class="nav-link">
                                 <i class="nav-icon fa fa-question-circle"></i>
                                 <p>
                                     Question manager

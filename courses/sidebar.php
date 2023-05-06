@@ -117,7 +117,7 @@ require 'config.php';
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="http://localhost/Elearn_web/courses/API_Youtube/teacher_courses/PresentationSkills.php" class="nav-link">
+                                <a href="<?php echo $domain_courses_Presentation ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Presentation skills
                                 </a>
@@ -129,7 +129,7 @@ require 'config.php';
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="http://localhost/Elearn_web/courses/API_Youtube/teacher_courses/TeachingSkills.php" class="nav-link">
+                                <a href="<?php echo $domain_courses_TeachingSkills ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Teaching skills
                                 </a>

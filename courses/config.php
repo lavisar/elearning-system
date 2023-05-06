@@ -2,7 +2,7 @@
 $domain_contactList = 'http://localhost/Elearn_web/courses/contactList.php';
 $domain_profileUpdate = 'http://localhost/Elearn_web/courses/updateProfile.php';
 $domain_actionPHP_Logout = 'http://localhost/Elearn_web/courses/action_php/logout.php';
-
+$domain_studentManager = 'http://localhost/Elearn_web/courses/studentManager.php';
 // domain for courses 
 // --------------------------------
 // Student
@@ -17,5 +17,5 @@ $domain_courses_MySQL = 'http://localhost/Elearn_web/courses/API_Youtube/student
 // Teacher
 $domain_courses_PedagogicalBehaviorSkills = 'http://localhost/Elearn_web/courses/API_Youtube/teacher_courses/PedagogicalBehaviorSkills.php';
 $domain_courses_Pedagogical = 'http://localhost/Elearn_web/courses/API_Youtube/teacher_courses/NghiepVuSP.php';
-$domain_courses_Presentation = 'http://localhost/Elearn_web/courses/API_Youtube/teacher_courses/PresentationSkill.php';
-$domain_courses_TeachingSkill = 'http://localhost/Elearn_web/courses/API_Youtube/teacher_courses/TeachingSkill.php';
+$domain_courses_Presentation = 'http://localhost/Elearn_web/courses/API_Youtube/teacher_courses/PresentationSkills.php';
+$domain_courses_TeachingSkills = 'http://localhost/Elearn_web/courses/API_Youtube/teacher_courses/TeachingSkills.php';

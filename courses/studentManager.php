@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elearn | Teacher</title>
+    <title>Contact List</title>
+    <!-- Bootstrap CSS -->
 </head>
-<?php include 'config.php' ?>
 
 <body>
     <!-- PHP kiểm tra đăng nhập và phân quyền -->
@@ -25,6 +22,7 @@
     }
     $username = $_SESSION['username'];
     include "layout.php";
+    require "config.php";
     ?>
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -105,6 +103,14 @@
                             </p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="<?php echo $domain_studentManager ?>" class="nav-link">
+                            <i class="nav-icon fa fa-question-circle"></i>
+                            <p>
+                                Student manager
+                            </p>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <!-- /.sidebar-menu -->
@@ -112,48 +118,53 @@
         <!-- /.sidebar -->
     </aside>
 
-    <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper p-5">
-        <ul class="list-unstyled">
-            <a href="<?php echo $domain_courses_Presentation ?>" class="text-dark" target="_blank">
-                <li class="border border-info p-3 media">
-                    <img class="img-thumbnail mr-2" src="../assets/img/forCourses/presentation.jpg" alt="Generic placeholder image" style="width: 15%;">
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">Presentation skills</h5>
-                        Presentation skills refer to the ability to effectively communicate and deliver information in a clear and engaging manner to an audience.
-                    </div>
-                </li>
-            </a>
-            <a href="<?php echo $domain_courses_PedagogicalBehaviorSkills ?>" class="text-dark" target="_blank">
-                <li class="border border-info p-3 media my-4">
-                    <img class="img-thumbnail mr-2" src="../assets/img/forCourses/Pedagogical_behavior.png" alt="Generic placeholder image" style="width: 15%;">
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">Pedagogical behavior</h5>
-                        Pedagogical behavior refers to the actions and attitudes of teachers towards students that support their learning and development.
-                    </div>
-                </li>
-            </a>
-            <a href="<?php echo $domain_courses_Pedagogical ?>" class="text-dark" target="_blank">
-                <li class="border border-info p-3 media">
-                    <img class="img-thumbnail mr-2" src="../assets/img/forCourses/Pedagogic.jpg" alt="Generic placeholder image" style="width: 15%;">
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">Pedagogic</h5>
-                        Pedagogy refers to the methods, strategies, and principles of teaching and education. It focuses on the process of transferring knowledge, skills, values, and attitudes from educators to learners.
-                    </div>
-                </li>
-            </a>
-            <a href="<?php echo $domain_courses_TeachingSkills ?>" class="text-dark" target="_blank">
-                <li class="border border-info p-3 media my-4">
-                    <img class="img-thumbnail mr-2" src="../assets/img/forCourses/Teaching skills.jpg" alt="Generic placeholder image" style="width: 15%;">
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">Teaching skills</h5>
-                        Teaching skills refer to the abilities and techniques used by educators to facilitate learning and promote student success. These skills can include lesson planning, effective communication, classroom management, and assessment strategies.
-                    </div>
-                </li>
-            </a>
-        </ul>
+        <div class="container">
+            <h2>Question List</h2>
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Question</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    // Tạo kết nối đến database
+                    $conn = mysqli_connect('localhost', '', '', 'elearndb');
+                    // Kiểm tra kết nối
+                    if ($conn->connect_error) {
+                        die("Connection failed: " . $conn->connect_error);
+                    }
+                    // Truy vấn SQL để lấy dữ liệu từ bảng contact
+                    $sql = "SELECT * FROM contact ORDER BY id DESC";
+                    $result = $conn->query($sql);
+
+                    // Nếu có dữ liệu, thêm vào danh sách
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<tr>";
+                            echo "<td>" . $row["id"] . "</td>";
+                            echo "<td>" . $row["name"] . "</td>";
+                            echo "<td>" . $row["email"] . "</td>";
+                            echo "<td style='max-width: 70%;'>" . $row["question"] . "</td>";
+                            echo "<td><a href='./action_php/delete.php?id=" . $row["id"] . "' class='btn btn-danger'>Delete</a></td>";
+                            echo "</tr>";
+                        }
+                    } else {
+                        echo "<tr><td colspan='4'>No question found.</td></tr>";
+                    }
+
+                    // Đóng kết nối đến database
+                    $conn->close();
+                    ?>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <!-- /.content-wrapper -->
 </body>
 
 </html>
