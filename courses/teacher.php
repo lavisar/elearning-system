@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elearn | Teacher</title>
 </head>
+<?php include 'config.php' ?>
 
 <body>
     <!-- PHP kiểm tra đăng nhập và phân quyền -->
     <?php
     session_start();
-    require 'config.php';
     if ($_SESSION['role'] == 0) {
         // Nếu chưa sai quyền, chuyển hướng đến trang đăng nhập        
         header('Location: ../login.php');
