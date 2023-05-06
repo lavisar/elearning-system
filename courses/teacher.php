@@ -78,7 +78,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="<?php echo $domain_courses_Presentation ?>" class="nav-link">
+                                <a href="http://localhost/Elearn_web/courses/API_Youtube/teacher_courses/PresentationSkills.php" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Presentation skills
                                 </a>
@@ -90,7 +90,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="<?php echo $domain_courses_TeachingSkill ?>" class="nav-link">
+                                <a href="http://localhost/Elearn_web/courses/API_Youtube/teacher_courses/TeachingSkills.php" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Teaching skills
                                 </a>
@@ -115,7 +115,7 @@
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper p-5">
         <ul class="list-unstyled">
-            <a href="<?php echo $domain_courses_PresentationSkills ?>" class="text-dark" target="_blank">
+            <a href="http://localhost/Elearn_web/courses/API_Youtube/teacher_courses/PresentationSkills.php" class="text-dark" target="_blank">
                 <li class="border border-info p-3 media">
                     <img class="img-thumbnail mr-2" src="../assets/img/forCourses/presentation.jpg" alt="Generic placeholder image" style="width: 15%;">
                     <div class="media-body">
@@ -142,7 +142,7 @@
                     </div>
                 </li>
             </a>
-            <a href="<?php echo $domain_courses_TeachingSkills ?>" class="text-dark" target="_blank">
+            <a href="http://localhost/Elearn_web/courses/API_Youtube/teacher_courses/TeachingSkills.php" class="text-dark" target="_blank">
                 <li class="border border-info p-3 media my-4">
                     <img class="img-thumbnail mr-2" src="../assets/img/forCourses/Teaching skills.jpg" alt="Generic placeholder image" style="width: 15%;">
                     <div class="media-body">

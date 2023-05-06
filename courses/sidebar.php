@@ -1,4 +1,6 @@
-<?php require 'config.php' ?>
+<?php
+require 'config.php';
+?>
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
@@ -115,7 +117,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="<?php echo $domain_courses_Presentation ?>" class="nav-link">
+                                <a href="http://localhost/Elearn_web/courses/API_Youtube/teacher_courses/PresentationSkills.php" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Presentation skills
                                 </a>
@@ -127,7 +129,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="<?php echo $domain_courses_TeachingSkills ?>" class="nav-link">
+                                <a href="http://localhost/Elearn_web/courses/API_Youtube/teacher_courses/TeachingSkills.php" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Teaching skills
                                 </a>
