@@ -127,7 +127,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="<?php echo $domain_courses_TeachingSkill ?>" class="nav-link">
+                                <a href="<?php echo $domain_courses_TeachingSkills ?>" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     Teaching skills
                                 </a>

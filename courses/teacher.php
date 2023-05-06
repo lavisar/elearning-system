@@ -115,7 +115,7 @@
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper p-5">
         <ul class="list-unstyled">
-            <a href="./API_Youtube/teacher_courses/PresentationSkills.php" class="text-dark">
+            <a href="<?php echo $domain_courses_PresentationSkills ?>" class="text-dark" target="_blank">
                 <li class="border border-info p-3 media">
                     <img class="img-thumbnail mr-2" src="../assets/img/forCourses/presentation.jpg" alt="Generic placeholder image" style="width: 15%;">
                     <div class="media-body">
@@ -124,7 +124,7 @@
                     </div>
                 </li>
             </a>
-            <a href="./API_Youtube/teacher_courses/PedagogicalBehaviorSkills.php" class="text-dark">
+            <a href="<?php echo $domain_courses_PedagogicalBehaviorSkills ?>" class="text-dark" target="_blank">
                 <li class="border border-info p-3 media my-4">
                     <img class="img-thumbnail mr-2" src="../assets/img/forCourses/Pedagogical_behavior.png" alt="Generic placeholder image" style="width: 15%;">
                     <div class="media-body">
@@ -133,7 +133,7 @@
                     </div>
                 </li>
             </a>
-            <a href="./API_Youtube/teacher_courses/NghiepVuSP.php" class="text-dark">
+            <a href="<?php echo $domain_courses_Pedagogical ?>" class="text-dark" target="_blank">
                 <li class="border border-info p-3 media">
                     <img class="img-thumbnail mr-2" src="../assets/img/forCourses/Pedagogic.jpg" alt="Generic placeholder image" style="width: 15%;">
                     <div class="media-body">
@@ -142,7 +142,7 @@
                     </div>
                 </li>
             </a>
-            <a href="./API_Youtube/teacher_courses/TeachingSkills.php" class="text-dark">
+            <a href="<?php echo $domain_courses_TeachingSkills ?>" class="text-dark" target="_blank">
                 <li class="border border-info p-3 media my-4">
                     <img class="img-thumbnail mr-2" src="../assets/img/forCourses/Teaching skills.jpg" alt="Generic placeholder image" style="width: 15%;">
                     <div class="media-body">
