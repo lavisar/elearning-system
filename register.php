@@ -17,7 +17,7 @@
             max-width: 350px;
             padding: 20px;
             border-radius: 10px;
-            height: 520px;
+            height: fit-content;
         }
 
         h2 {
@@ -90,17 +90,18 @@
             die("Kết nối thất bại: " . mysqli_connect_error());
         }
 
-        if (isset($_POST['username']) && isset($_POST['fullname']) && isset($_POST['password']) && isset($_POST['phone']) && isset($_POST['role'])) {
+        if (isset($_POST['username']) && isset($_POST['fullname']) && isset($_POST['password']) && isset($_POST['phone']) && isset($_POST['role']) && isset($_POST['teacher-code'])) {
             $username = mysqli_real_escape_string($conn, $_POST['username']);
             $fullname = mysqli_real_escape_string($conn, $_POST['fullname']);
             $password = mysqli_real_escape_string($conn, $_POST['password']);
             $phone = mysqli_real_escape_string($conn, $_POST['phone']);
-            // Nếu role là teacher thì giá trị là 1, ngược lại là 0
-            if ($_POST['role'] == 'teacher') {
+            // Nếu role là teacher thì giá trị là 1, ngược lại là 0, check secret code cho giáo viên
+            if ($_POST['role'] == 'teacher' && $_POST['teacher-code'] == 'Lavi1410@') {
                 $role = 1;
             } else {
                 $role = 0;
             }
+
 
             $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
@@ -117,7 +118,7 @@
         mysqli_close($conn);
         ?>
 
-        <form method="post" style="margin-top: 10px;">
+        <form method="post" style="margin-top: 10px;" id="my-form">
             <label for="username">Username:</label>
             <input type="text" name="username" required><br>
 
@@ -138,6 +139,38 @@
 
             <input type="submit" name="submit" value="Submit">
         </form>
+
+        <script>
+            const roleInputs = document.querySelectorAll('input[name="role"]');
+            const form = document.getElementById('my-form');
+
+            roleInputs.forEach((input) => {
+                input.addEventListener('change', () => {
+                    if (input.value === 'teacher') {
+                        const teacherCodeInput = document.createElement('input');
+                        teacherCodeInput.setAttribute('type', 'text');
+                        teacherCodeInput.setAttribute('name', 'teacher-code');
+                        teacherCodeInput.setAttribute('placeholder', 'Enter teacher code');
+
+                        form.insertBefore(teacherCodeInput, form.lastElementChild);
+                    } else {
+                        const teacherCodeInput = document.querySelector('input[name="teacher-code"]');
+                        if (teacherCodeInput) {
+                            teacherCodeInput.remove();
+                        }
+                    }
+                });
+            });
+
+            form.addEventListener('submit', (event) => {
+                const roleInput = document.querySelector('input[name="role"]:checked');
+                if (roleInput.value === 'teacher') {
+                    const teacherCodeInput = document.querySelector('input[name="teacher-code"]');
+                    const teacherCode = teacherCodeInput.value;
+                    // do something with the teacher code
+                }
+            });
+        </script>
     </div>
 </body>
 
