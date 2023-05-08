@@ -22,9 +22,10 @@ To install this PHP project, you can follow the steps below:
 * Teachers cannot access the student page and vice versa, students cannot access
 the teacher page<br>
 ![Screenshot 2023-05-08 174548](https://user-images.githubusercontent.com/67550867/236804850-7bad0273-ba8a-419a-ab31-765d94967314.png)<br>
-<br> 
-### <b> Courses page </b> <br>
-* Teacher courses and management page <br>
+
+### <b>Courses page </b> <br>
+* Teacher courses and management page 
+* Teacher can manage question of student, contact list and student list<br>
 ![Screenshot 2023-05-08 182300](https://user-images.githubusercontent.com/67550867/236817062-18c25860-412f-44e1-a2d2-f9a221823f1d.png)
 * Student courses <br>
 * Courses are divided into specific topics <br>
