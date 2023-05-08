@@ -1,6 +1,6 @@
 # eLearning-system
 * A system for online learning with subject-specific courses available.
-* Demo: <a href="https://www.youtube.com/watch?v=UXUcMlPoG8k" target="_blank">Demo</a>
+* <a href="https://www.youtube.com/watch?v=UXUcMlPoG8k" target="_blank">Click here for demo</a>
 ## Installation
 ### Requirements
 * Web browser
