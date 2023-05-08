@@ -13,7 +13,7 @@ To install this PHP project, you can follow the steps below:
 * Enter the website address in a web browser to access the project, usually is <b>localhost</b> or your port. <br>
 <i>`Note: To use this project, you need to have PHP (any version) and a MySQL database.`</i>
 ## Usage
-<b> Main page </b> 
+### <b> Main page </b> 
 * View some basic courses including those for teachers, students, and the public <br>
 ![Web capture_8-5-2023_173823_localhost](https://user-images.githubusercontent.com/67550867/236803488-1137396d-c8e7-47bd-aa87-dccfe8083fbf.jpeg) <br>
 * Contact page for sending infomation to teacher <br>
@@ -23,7 +23,7 @@ To install this PHP project, you can follow the steps below:
 the teacher page<br>
 ![Screenshot 2023-05-08 174548](https://user-images.githubusercontent.com/67550867/236804850-7bad0273-ba8a-419a-ab31-765d94967314.png)<br>
 <br> 
-<b> Courses page </b> <br>
+### <b> Courses page </b> <br>
 * Teacher courses and management page <br>
 ![Screenshot 2023-05-08 182300](https://user-images.githubusercontent.com/67550867/236817062-18c25860-412f-44e1-a2d2-f9a221823f1d.png)
 * Student courses <br>
