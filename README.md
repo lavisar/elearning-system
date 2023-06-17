@@ -2,6 +2,8 @@
 * A system for online learning with subject-specific courses available.
 * <a href="https://www.youtube.com/watch?v=UXUcMlPoG8k" target="_blank">Click here for demo</a>
 ## Installation
+### LICENSE
+<a href="https://github.com/lavisar/eLearning-system/blob/master/LICENSE">Apache-2.0 License</a>
 ### Requirements
 * Web browser
 * Xampp controlpanel
